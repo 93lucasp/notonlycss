@@ -1,8 +1,10 @@
 <template>
   <Layout>
+    <div id="medium-widget"></div>
+    
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+    <!-- <g-image alt="Example image" src="~/favicon.png" width="135" />
 
     <h1>Hello, world!</h1>
 
@@ -32,54 +34,42 @@
         </g-link>
       </li>
     </ul>
-  <hr>
-  reddit
-  <ul>
-      <li v-for="postReddit in $page.redditPost.edges" :key="postReddit.id">
-        <g-link :to="postReddit.node.path">
-          {{postReddit.node.title}}
-        </g-link>
+    <hr>-->
+    reddit
+    <!-- <ul>
+      <li class="article" v-for="postReddit in $page.redditPost.edges" :key="postReddit.id">
+        <div>
+          <div
+            class="article__img"
+            :style="{'background-image': 'url(' + postReddit.node.thumbnail + ')'}"
+          ></div>
+        </div>
+        <div>
+          <h1 class="article__title">{{postReddit.node.title}}</h1>
+          <g-link :to="postReddit.node.link">Read</g-link>
+        </div>
       </li>
-    </ul>
+    </ul> -->
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
-
+    
+    
   </Layout>
 </template>
 
 <page-query>
-query Posts{
-  posts: allPost {
-    edges {
-      node {
-        path
-        title
-        content
-      }
-    }
-  }
-  redditPost: allRedditPost {
-    edges {
-      node {
-        id
-        title
-        path
-        thumbnail
-      }
-    }
-  }
 
-}
 </page-query>
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Hello, world!"
+  },
+  mounted() {
+    setTimeout(function(){ MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/notonlycss","postsPerLine":1,"limit":1000,"picture":"small","fields":["description","author","publishAt"],"ratio":"original"}}) }, 1000);
+      
   }
-}
+
+};
 </script>
 
 <style>

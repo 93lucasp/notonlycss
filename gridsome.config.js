@@ -11,8 +11,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'blog/**/*.md',
-        typeName: 'Post',
+        path: 'events/**/*.md',
+        typeName: 'Events',
         remark: {
           // remark options
         }
@@ -21,8 +21,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'page/**/*.md',
-        typeName: 'CustomPage',
+        path: 'snippets/**/*.md',
+        typeName: 'Snippets',
         remark: {
           // remark options
         }

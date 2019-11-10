@@ -19,9 +19,10 @@ module.exports = function (api) {
         title: post.title,
         path: '/reddit/' + post.guid.replace('https://medium.com/p/',""),
         thumbnail: post.thumbnail,
-        date: post.pubDate,
+        date: post.pubDate.split(" ")[0],
         author: post.author,
         content: post.content,
+        link: post.link
       })
     }
   })
