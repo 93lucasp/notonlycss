@@ -124,6 +124,11 @@ export default {
 .article__abstract {
   font-size: 20px;
   margin-bottom: 0px;
+  overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 }
 .article__preview {
   width: 240px;
