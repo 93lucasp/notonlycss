@@ -1,7 +1,24 @@
 <template>
   <Layout>
-    <div id="medium-widget"></div>
-    
+    <ul>
+      <li v-for="article in $page.articles.edges" :key="article.id" class="article">
+        <div>
+          <div
+            class="article__preview"
+            :style="{ 'background-image': 'url(' + article.node.image + ')' }"
+          ></div>
+        </div>
+        <a :href="article.node.path" class="article__link">
+          <h1 class="article__title">{{article.node.title}}</h1>
+          <p class="article__abstract">{{article.node.abstract}}</p>
+          <div class="article__author">
+            <p>{{article.node.author}}</p>
+            <span class="mx-5"> - </span>
+            <p>{{article.node.date}}</p>
+          </div>
+        </a>
+      </li>
+    </ul>
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" />
@@ -48,64 +65,76 @@
           <g-link :to="postReddit.node.link">Read</g-link>
         </div>
       </li>
-    </ul> -->
-
-    
-    
+    </ul>-->
   </Layout>
 </template>
 
 <page-query>
-
+query {
+  articles: allArticles {
+    edges {
+      node {
+        title
+        abstract
+        image
+        link
+        date
+        author
+      }
+    }
+  }
+}
 </page-query>
 <script>
 export default {
   metaInfo: {
     title: "Not Only CSS"
-  },
-  mounted() {
-    setTimeout(function(){ MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/notonlycss","postsPerLine":1,"limit":1000,"picture":"small","fields":["description","author","publishAt"],"ratio":"original"}}) }, 1000);
-      
   }
-
 };
 </script>
 
 <style>
-.medium-widget-article__title {
-  font-size: 30px!important;
-  line-height: 34px;
-}
-.medium-widget-article__description {
- font-size: 20px!important;
- margin-bottom: 30px;
-}
-.medium-widget-article__item {
-  padding: 0!important;
-
-}
-.medium-widget-article__row {
-  margin:initial!important;
-  margin-bottom: 50px!important;
-}
-.medium-widget-article__row {
-  background-color: #0E2D43;
+.article {
+  background-color: #0e2d43;
   padding: 30px;
   color: #fff;
   margin-bottom: 50px;
   list-style: none;
   border-radius: 5px;
   display: flex;
-   color: #fff;
 }
-.medium-widget-article__date, .medium-widget-article__clap, .medium-widget-article__like, .medium-widget-article__author-name,.medium-widget-article__description, .medium-widget-article__row a {
-  color: #fff!important;
+.article__title {
+  font-size: 30px;
+  line-height: 34px;
+  margin-top: 0;
 }
-.medium-widget-article__clap::before, .medium-widget-article__likeì::before {
-  color: #fff!important;
+.article__author {
+  display: flex;
+  align-items: center;
 }
-.medium-widget-article__image img {
+.mx-5 {
+   margin-left: 5px;
+  margin-right: 5px;
+}
+.article__author p {
+ 
+  font-size: 12px;
+  color: #f4f4f4;
+}
+.article__abstract {
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.article__preview {
+  width: 240px;
+  height: 160px;
+  background-position: center;
+  background-size: cover;
   border-radius: 5px;
-  /* width: 200px!important; */
+  margin-right: 30px;
+}
+.article__link {
+  color: #fff;
+  text-decoration: none;
 }
 </style>

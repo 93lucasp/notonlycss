@@ -27,6 +27,16 @@ module.exports = {
           // remark options
         }
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'articles/**/*.md',
+        typeName: 'Articles',
+        remark: {
+          // remark options
+        }
+      }
     }
   ],
   transformers: {
