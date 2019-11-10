@@ -35,7 +35,6 @@
       </li>
     </ul>
     <hr>-->
-    reddit
     <!-- <ul>
       <li class="article" v-for="postReddit in $page.redditPost.edges" :key="postReddit.id">
         <div>
@@ -62,7 +61,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Hello, world!"
+    title: "Not Only CSS"
   },
   mounted() {
     setTimeout(function(){ MediumWidget.Init({renderTo: '#medium-widget', params: {"resource":"https://medium.com/notonlycss","postsPerLine":1,"limit":1000,"picture":"small","fields":["description","author","publishAt"],"ratio":"original"}}) }, 1000);
@@ -73,7 +72,40 @@ export default {
 </script>
 
 <style>
-.home-links a {
-  margin-right: 1rem;
+.medium-widget-article__title {
+  font-size: 30px!important;
+  line-height: 34px;
+}
+.medium-widget-article__description {
+ font-size: 20px!important;
+ margin-bottom: 30px;
+}
+.medium-widget-article__item {
+  padding: 0!important;
+
+}
+.medium-widget-article__row {
+  margin:initial!important;
+  margin-bottom: 50px!important;
+}
+.medium-widget-article__row {
+  background-color: #0E2D43;
+  padding: 30px;
+  color: #fff;
+  margin-bottom: 50px;
+  list-style: none;
+  border-radius: 5px;
+  display: flex;
+   color: #fff;
+}
+.medium-widget-article__date, .medium-widget-article__clap, .medium-widget-article__like, .medium-widget-article__author-name,.medium-widget-article__description, .medium-widget-article__row a {
+  color: #fff!important;
+}
+.medium-widget-article__clap::before, .medium-widget-article__likeì::before {
+  color: #fff!important;
+}
+.medium-widget-article__image img {
+  border-radius: 5px;
+  /* width: 200px!important; */
 }
 </style>

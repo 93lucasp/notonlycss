@@ -6,7 +6,7 @@
 
 //gridsome.config.js
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'Not Only CSS',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
