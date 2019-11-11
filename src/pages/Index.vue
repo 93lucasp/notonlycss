@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <ul>
+    <ul class="articles-list">
       <li v-for="article in $page.articles.edges" :key="article.id" class="article">
         <div>
           <div
@@ -13,7 +13,7 @@
           <p class="article__abstract">{{article.node.abstract}}</p>
           <div class="article__author">
             <p>{{article.node.author}}</p>
-            <span class="mx-5"> - </span>
+            <span class="mx-5">-</span>
             <p>{{article.node.date}}</p>
           </div>
         </a>
@@ -103,21 +103,32 @@ export default {
   border-radius: 5px;
   display: flex;
 }
+@media screen and (max-width: 576px) {
+  .article {
+   display: block;
+  }
+}
 .article__title {
   font-size: 30px;
   line-height: 34px;
   margin-top: 0;
+}
+@media screen and (max-width: 576px) {
+  .article__title {
+  font-size: 20px;
+  line-height: 34px;
+  margin-top: 0;
+}
 }
 .article__author {
   display: flex;
   align-items: center;
 }
 .mx-5 {
-   margin-left: 5px;
+  margin-left: 5px;
   margin-right: 5px;
 }
 .article__author p {
- 
   font-size: 12px;
   color: #f4f4f4;
 }
@@ -125,10 +136,15 @@ export default {
   font-size: 20px;
   margin-bottom: 0px;
   overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 576px) {
+  .article__abstract {
+  font-size: 16px;
+}
 }
 .article__preview {
   width: 240px;
@@ -137,6 +153,16 @@ export default {
   background-size: cover;
   border-radius: 5px;
   margin-right: 30px;
+}
+@media screen and (max-width: 576px) {
+  .article__preview {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 30px;
+  }
+}
+.articles-list {
+  width: 100%;
 }
 .article__link {
   color: #fff;

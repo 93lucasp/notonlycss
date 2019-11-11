@@ -6,6 +6,10 @@ import DefaultLayout from '~/layouts/Default.vue'
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
+  head.script.push({
+    src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+    body: true
+  })
  
 }
 
