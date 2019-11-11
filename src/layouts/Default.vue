@@ -12,8 +12,31 @@
         <g-link class="nav__link" to="/newsletter/">Newsletter</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
       </nav>
+     
     </header>
+     <hr class="hr-header">
     <slot />
+    <div class="pre-footer">
+      <hr>
+      <p> Our articles are published on Medium, we write for free and only Medium<br> through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows our writers to earn money for their<br> commitment.<br></p>
+     
+      <hr>
+    </div>
+    <footer class="footer">
+      
+      <p class="footer__text col">
+          Not Only CSS is proudly <br>running on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
+        </p>
+        <p class="col text-center"><a href="http://">Write for us</a></p>
+      <ul class="footer__social col text-right">
+        <li>
+          <a href="https://www.facebook.com/notOnlyCSS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://medium.com/notonlycss" target="_blank"><i class="fab fa-medium-m"></i></a>
+        </li>
+      </ul>
+    </footer>
   </div>
 </template>
 
@@ -35,6 +58,47 @@ export default {
 };
 </script>
 <style>
+.hr-header {
+  margin-bottom: 100px;
+}
+.col {
+  width: 33.33%;
+  
+}
+.text-center {
+  text-align: center;
+}
+
+.pre-footer {
+  text-align: center;
+  margin: 100px auto;
+}
+.pre-footer a{
+ color: #fff;
+}
+hr{
+ border-color: rgba(255,255,255,.2);
+}
+.footer__social {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+.footer__social li{
+  margin: 0 8px;
+}
+.footer {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer a {
+  color: #fff;
+}
+.footer__logo {
+  width: 100px;
+}
 .logo {
   width: 200px;
   z-index: 9;
@@ -60,8 +124,8 @@ header {
 }
 @media screen and (max-width: 576px) {
   .hamburger {
-  display: block;
-}
+    display: block;
+  }
 }
 
 .hamburger--active {
@@ -110,10 +174,10 @@ header {
     opacity: 0;
   }
   .nav a {
-  display: block;
-  padding: 30px;
-  font-size: 26px;
-}
+    display: block;
+    padding: 30px;
+    font-size: 26px;
+  }
 }
 .nav--active {
   visibility: visible;

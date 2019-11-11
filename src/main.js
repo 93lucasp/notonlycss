@@ -9,6 +9,11 @@ export default function (Vue, { router, head, isClient }) {
   head.script.push({
     src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js',
     body: true
+  },
+  {
+    src: 'https://kit.fontawesome.com/97471774c6.js',
+    body: true,
+    crossorigin:"anonymous"
   })
  
 }
