@@ -1,9 +1,10 @@
 <template>
   <div class="layout">
     <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
+    
+        <!-- <g-link to="/">{{ $static.metadata.siteName }}</g-link> -->
+        <g-link to="/"><g-image alt="Logo Not Only CSS" src="~/images/notonlycss.png" class="logo" /></g-link>
+    
       <nav class="nav">
         <g-link class="nav__link" to="/snippets">Snippets</g-link>
         <g-link class="nav__link" to="/events/">Events</g-link>
@@ -24,6 +25,9 @@ query {
 </static-query>
 
 <style>
+.logo{
+  width: 200px;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -37,7 +41,7 @@ header a {
 header a:first-child {margin-left: 0}
 header a:last-child {margin-right: 0}
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin:0;
   padding:0;
   line-height: 1.5;

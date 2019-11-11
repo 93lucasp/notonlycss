@@ -8,7 +8,7 @@
             :style="{ 'background-image': 'url(' + article.node.image + ')' }"
           ></div>
         </div>
-        <a :href="article.node.path" class="article__link">
+        <a :href="article.node.link" class="article__link">
           <h1 class="article__title">{{article.node.title}}</h1>
           <p class="article__abstract">{{article.node.abstract}}</p>
           <div class="article__author">
