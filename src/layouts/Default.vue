@@ -65,6 +65,11 @@ export default {
   width: 33.33%;
   
 }
+@media screen and (max-width: 576px) {
+  .col {
+    width: 100%;
+  }
+}
 .text-center {
   text-align: center;
 }
@@ -84,6 +89,12 @@ hr{
   list-style: none;
   justify-content: flex-end;
 }
+@media screen and (max-width: 576px) {
+  .footer__social {
+  
+  justify-content: center;
+}
+}
 .footer__social li{
   margin: 0 8px;
 }
@@ -92,6 +103,12 @@ hr{
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
 }
 .footer a {
   color: #fff;
