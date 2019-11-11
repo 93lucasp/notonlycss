@@ -18,7 +18,7 @@
     <slot />
     <div class="pre-footer">
       <hr>
-      <p> Our articles are published on Medium, we write for free and only Medium<br> through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows our writers to earn money for their<br> commitment.<br></p>
+      <p> Our articles are published on Medium, we write for free and only Medium<br> through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the<br> commitment.<br></p>
      
       <hr>
     </div>
@@ -27,7 +27,7 @@
       <p class="footer__text col">
           Not Only CSS is proudly <br>running on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
         </p>
-        <p class="col text-center"><a href="http://">Write for us</a></p>
+        <p class="col text-center"><a href="mailto:notonlycss@gmail.com">Write for us</a></p>
       <ul class="footer__social col text-right">
         <li>
           <a href="https://www.facebook.com/notOnlyCSS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
