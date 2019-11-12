@@ -8,7 +8,7 @@
             :style="{ 'background-image': 'url(' + article.node.image + ')' }"
           ></div>
         </div>
-        <a :href="article.node.link" class="article__link">
+        <div>
           <h1 class="article__title">{{article.node.title}}</h1>
           <p class="article__abstract">{{article.node.abstract}}</p>
           <div class="article__author">
@@ -16,7 +16,8 @@
             <span class="mx-5">-</span>
             <p>{{article.node.date}}</p>
           </div>
-        </a>
+          <a :href="article.node.link" class="article__link">Read</a>
+        </div>
       </li>
     </ul>
 
@@ -102,10 +103,27 @@ export default {
   list-style: none;
   border-radius: 5px;
   display: flex;
+  position: relative;
+  transition: all 0.2s;
+}
+/* .article:hover {
+  background-color:#123954;
+} */
+.article__link {
+  padding: 6px 30px;
+  border-radius: 5px;
+  background-color: #123954;
+  border-radius: 5px;
+  transition: all .2s;
+  border: 1px solid transparent;
+}
+.article__link:hover {
+  border: 1px solid #fff;
+  background-color: #0c2437;
 }
 @media screen and (max-width: 576px) {
   .article {
-   display: block;
+    display: block;
   }
 }
 .article__title {
@@ -115,14 +133,15 @@ export default {
 }
 @media screen and (max-width: 576px) {
   .article__title {
-  font-size: 20px;
-  line-height: 34px;
-  margin-top: 0;
-}
+    font-size: 20px;
+    line-height: 34px;
+    margin-top: 0;
+  }
 }
 .article__author {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 .mx-5 {
   margin-left: 5px;
@@ -143,8 +162,8 @@ export default {
 }
 @media screen and (max-width: 576px) {
   .article__abstract {
-  font-size: 16px;
-}
+    font-size: 16px;
+  }
 }
 .article__preview {
   width: 240px;

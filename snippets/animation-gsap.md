@@ -1,6 +1,7 @@
 ---
 title: Animation gsap
 abstract: Little description here
+author: Luca Spezzano
 ---
 <iframe height="332" style="width: 100%;" scrolling="no" title="GSAP animation" src="https://codepen.io/93lucasp/embed/xBQGLv?height=332&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 

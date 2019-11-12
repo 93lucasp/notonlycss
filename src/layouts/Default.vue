@@ -19,7 +19,6 @@
     <div class="pre-footer">
       <hr>
       <p> Our articles are published on Medium, we write for free and only Medium<br> through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the<br> commitment.<br></p>
-     
       <hr>
     </div>
     <footer class="footer">
@@ -31,6 +30,9 @@
       <ul class="footer__social col text-right">
         <li>
           <a href="https://www.facebook.com/notOnlyCSS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/NotOnlyCSS" target="_blank"><i class="fab fa-twitter"></i></a>
         </li>
         <li>
           <a href="https://medium.com/notonlycss" target="_blank"><i class="fab fa-medium-m"></i></a>
@@ -58,8 +60,20 @@ export default {
 };
 </script>
 <style>
+.description__page--noBottom {
+  margin-bottom: 15px!important;
+}
+.title__page--newsletter {
+  margin-bottom: 0;
+}
+.subtitle__page {
+  margin-top: 0;
+}
+.description__page a {
+  color: #fff;
+}
 .hr-header {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .col {
   width: 33.33%;
@@ -76,7 +90,7 @@ export default {
 
 .pre-footer {
   text-align: center;
-  margin: 100px auto;
+  margin: 140px auto 30px;
 }
 .pre-footer a{
  color: #fff;
@@ -189,6 +203,7 @@ header {
     background-color: #0c2437;
     padding-top: 100px;
     opacity: 0;
+    z-index: 1;
   }
   .nav a {
     display: block;
@@ -236,7 +251,7 @@ body {
 
 .description__page {
   font-size: 18px;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 /* .article__img {
   width: 200px;
@@ -251,7 +266,7 @@ body {
   margin: 0;
 }
 .layout {
-  max-width: 860px;
+  max-width: 960px;
 
   margin: 0 auto;
   padding-left: 30px;

@@ -13,10 +13,12 @@
           ></div>
         </div>
         <div class="event__body">
-          <g-link :to="event.node.path" class="event__link">
+          <div>
             <h1 class="event__title">{{event.node.title}}</h1>
             <p class="event__abstract">{{event.node.abstract}}</p>
-          </g-link>
+            <g-link :to="event.node.path" class="event__link">Discover</g-link>
+          </div>
+
           <p>Date: {{event.node.date}}</p>
         </div>
       </li>
@@ -60,13 +62,25 @@ export default {
     display: block;
   }
 }
+.event__link {
+  padding: 6px 30px;
+  border-radius: 5px;
+  background-color: #123954;
+  border-radius: 5px;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+}
+.event__link:hover {
+  border: 1px solid #fff;
+  background-color: #0c2437;
+}
 .event__body {
   width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
-.event__body p{
+.event__body p {
   margin-top: 0;
 }
 .event__title {
