@@ -99,7 +99,9 @@ export default {
       { name: 'description', content: 'Articles and tips for frontend developers' },
       { property: 'og:title', content: 'Not Only CSS' },
       { property: 'og:description', content: 'Articles and tips for frontend developers' },
-      { property: 'og:image', content: '~/images/share.png' }
+      { property: 'og:image', content: 'https://www.notonlycss.com/uploads/share.png' },
+      { property: 'og:url', content: 'https://www.notonlycss.com' },
+      { name: 'robots', content: 'index, follow' },
     ]
   }
 };
