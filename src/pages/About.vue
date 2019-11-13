@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="title__page">About us</h1>
-    <p class="description__page description__page--noBottom">Our mission is to help frontend developers to improve their knowledges. <br> We provide articles, snippets of animations, online events and weekly newsletter to keep you updated. </p>
+    <p class="description__page description__page--noBottom">Our mission is to help <b>frontend developers</b> to improve their knowledges. <br> We provide <b>articles, snippets of animations, online events and weekly newsletter to keep you updated</b>. </p>
     <p class="description__page">Our articles are published on Medium, we write for free and only Medium through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the commitment.<br></p>
     <h1 class="title__page">Follow Not Only CSS on social networks </h1>
     <ul class="social description__page">
@@ -23,7 +23,14 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About us'
+    title: "Not Only CSS | About",
+    meta: [
+      { name: 'description', content: 'Articles and tips for frontend developers' },
+      { property: 'og:title', content: 'Not Only CSS | About' },
+      { property: 'og:description', content: 'Articles and tips for frontend developers' },
+      { property: 'og:image', content: 'https://www.notonlycss.com/uploads/share.png' },
+      { property: 'og:url', content: 'https://www.notonlycss.com/about' },
+    ]
   }
 }
 </script>

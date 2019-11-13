@@ -33,6 +33,7 @@ export default {
 .eventPage {
   background-color: #0e2d43;
   padding: 30px;
+  margin-bottom: 100px;
 }
 .eventPage__image {
    width: 100%;

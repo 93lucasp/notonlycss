@@ -12,30 +12,37 @@
         <g-link class="nav__link" to="/newsletter/">Newsletter</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
       </nav>
-     
     </header>
-     <hr class="hr-header">
-    <slot />
-    <div class="pre-footer">
-      <hr>
-      <p> Our articles are published on Medium, we write for free and only Medium<br> through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the<br> commitment.<br></p>
-      <hr>
+    <hr class="hr-header" />
+    <div class="container">
+      <slot />
     </div>
+    
+    <hr />
     <footer class="footer">
-      
       <p class="footer__text col">
-          Not Only CSS is proudly <br>running on <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
-        </p>
-        <p class="col text-center"><a href="mailto:notonlycss@gmail.com">Write for us</a></p>
+        Not Only CSS is proudly
+        <br />running on
+        <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
+      </p>
+      <p class="col text-center">
+        <a href="mailto:notonlycss@gmail.com">Write for us</a>
+      </p>
       <ul class="footer__social col text-right">
         <li>
-          <a href="https://www.facebook.com/notOnlyCSS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/notOnlyCSS/" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
         </li>
         <li>
-          <a href="https://twitter.com/NotOnlyCSS" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://twitter.com/NotOnlyCSS" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
         </li>
         <li>
-          <a href="https://medium.com/notonlycss" target="_blank"><i class="fab fa-medium-m"></i></a>
+          <a href="https://medium.com/notonlycss" target="_blank">
+            <i class="fab fa-medium-m"></i>
+          </a>
         </li>
       </ul>
     </footer>
@@ -60,8 +67,39 @@ export default {
 };
 </script>
 <style>
+.container {
+  padding: 50px 0px;
+}
+.col-7 {
+  width: 70%;
+}
+.col-3{
+  width: 30%;
+}
+.d-flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+
+}
+.justify-between {
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 576px) {
+  .col-6 {
+    width: 100%;
+  }
+}
 .description__page--noBottom {
-  margin-bottom: 15px!important;
+  margin-bottom: 15px !important;
 }
 .title__page--newsletter {
   margin-bottom: 0;
@@ -72,12 +110,9 @@ export default {
 .description__page a {
   color: #fff;
 }
-.hr-header {
-  margin-bottom: 80px;
-}
+
 .col {
   width: 33.33%;
-  
 }
 @media screen and (max-width: 576px) {
   .col {
@@ -88,15 +123,8 @@ export default {
   text-align: center;
 }
 
-.pre-footer {
-  text-align: center;
-  margin: 140px auto 30px;
-}
-.pre-footer a{
- color: #fff;
-}
-hr{
- border-color: rgba(255,255,255,.2);
+hr {
+  border-color: rgba(255, 255, 255, 0.2);
 }
 .footer__social {
   display: flex;
@@ -105,11 +133,10 @@ hr{
 }
 @media screen and (max-width: 576px) {
   .footer__social {
-  
-  justify-content: center;
+    justify-content: center;
+  }
 }
-}
-.footer__social li{
+.footer__social li {
   margin: 0 8px;
 }
 .footer {

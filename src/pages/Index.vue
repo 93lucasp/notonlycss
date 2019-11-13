@@ -20,6 +20,11 @@
         </div>
       </li>
     </ul>
+    <div class="pre-footer">
+      <hr>
+      <p> Our articles are published on Medium, we write for free and only Medium<br> through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the<br> commitment.<br></p>
+ 
+    </div>
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" />
@@ -89,12 +94,28 @@ query {
 <script>
 export default {
   metaInfo: {
-    title: "Not Only CSS"
+    title: "Not Only CSS",
+    meta: [
+      { name: 'description', content: 'Articles and tips for frontend developers' },
+      { property: 'og:title', content: 'Not Only CSS' },
+      { property: 'og:description', content: 'Articles and tips for frontend developers' },
+      { property: 'og:image', content: '~/images/share.png' }
+    ]
   }
 };
 </script>
 
 <style>
+.pre-footer {
+  text-align: center;
+  margin: 140px auto 20px;
+}
+.pre-footer p{
+  margin-bottom: 0;
+}
+.pre-footer a{
+ color: #fff;
+}
 .article {
   background-color: #0e2d43;
   padding: 30px;
@@ -186,5 +207,12 @@ export default {
 .article__link {
   color: #fff;
   text-decoration: none;
+}
+@media screen and (max-width: 576px) {
+.article__link {
+  display: block;
+  text-align: center;
+  /* width: 100%; */
+}
 }
 </style>

@@ -1,14 +1,15 @@
 <template>
   <Layout>
     <h1 class="title__page">Events</h1>
-    <p
-      class="description__page"
-    >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <p class="description__page">
+      We love meetup, we are an international community so why don't try to organize online meetup?
+      <br />From here is born the idea.
+      <br />Our meetup will be on frontend technologies, join them and be part of our community.
+    </p>
     <ul>
       <li v-for="event in $page.events.edges" :key="event.id" class="event">
         <div>
-          <div
-            class="event__preview"
+          <div class="event__preview"
             :style="{ 'background-image': 'url(' + event.node.image + ')' }"
           ></div>
         </div>
@@ -16,10 +17,9 @@
           <div>
             <h1 class="event__title">{{event.node.title}}</h1>
             <p class="event__abstract">{{event.node.abstract}}</p>
+            <!-- <p>Date: {{event.node.date}}</p> -->
             <g-link :to="event.node.path" class="event__link">Discover</g-link>
           </div>
-
-          <p>Date: {{event.node.date}}</p>
         </div>
       </li>
     </ul>
@@ -43,7 +43,15 @@ query {
 <script>
 export default {
   metaInfo: {
-    title: "Not Only CSS | Events"
+    title: "Not Only CSS | Events",
+    meta: [
+      { name: 'description', content: 'The events of Not Only CSS' },
+      { property: 'og:title', content: 'Not Only CSS | Events' },
+      { property: 'og:description', content: 'Articles and tips for frontend developers' },
+      { property: 'og:image', content: 'https://www.notonlycss.com/uploads/share.png' },
+      { property: 'og:url', content: 'https://www.notonlycss.com/events' },
+      { name: 'robots', content: 'index, follow' },
+    ]
   }
 };
 </script>
@@ -93,8 +101,8 @@ export default {
   margin-bottom: 30px;
 }
 .event__preview {
-  width: 180px;
-  height: 120px;
+  width: 340px;
+  height: 240px;
   background-position: center;
   background-size: cover;
   border-radius: 5px;
@@ -111,5 +119,12 @@ export default {
 .event__link {
   color: #fff;
   text-decoration: none;
+}
+@media screen and (max-width: 576px) {
+  .event__link {
+    display: block;
+    text-align: center;
+    /* width: 100%; */
+  }
 }
 </style>
