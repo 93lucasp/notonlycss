@@ -3,7 +3,7 @@
     <div class="eventPage">
       <h1>{{$page.event.title}}</h1>
       <div class="eventPage__image" :style="{ 'background-image': 'url(' + $page.event.image + ')' }"></div>
-      <!-- <time>{{$page.event.date}}</time> -->
+      <!-- <i><time>{{$page.event.date}}</time></i> -->
       <div v-html="$page.event.content"></div>
     </div>
   </Layout>

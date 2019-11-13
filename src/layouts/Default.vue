@@ -1,40 +1,46 @@
 <template>
   <div class="layout">
-    <header class="header">
+    <header class="flex items-center justify-between py-6">
       <!-- <g-link to="/">{{ $static.metadata.siteName }}</g-link> -->
       <g-link to="/" class="nav__link">
-        <g-image alt="Logo Not Only CSS" src="~/images/notonlycss.png" class="logo" />
+        <g-image alt="Logo Not Only CSS" src="~/images/notonlycss.png" class="logo relative z-10" />
       </g-link>
-      <div class="hamburger" @click="hamburger()"></div>
+      <div
+        class="hamburger-container md:hidden z-10 relative flex items-center"
+        @click="hamburger()"
+      >
+        <div class="hamburger"></div>
+      </div>
+
       <nav class="nav">
-        <g-link class="nav__link" to="/snippets">Snippets</g-link>
-        <g-link class="nav__link" to="/events/">Events</g-link>
-        <g-link class="nav__link" to="/newsletter/">Newsletter</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link text-white mx-3" to="/snippets">Snippets</g-link>
+        <g-link class="nav__link text-white mx-3" to="/events/">Events</g-link>
+        <g-link class="nav__link text-white mx-3" to="/newsletter/">Newsletter</g-link>
+        <g-link class="nav__link text-white ml-3" to="/about/">About</g-link>
       </nav>
     </header>
-    <hr class="hr-header" />
+    <hr class="mb-16" />
     <div class="container">
       <slot />
     </div>
-    
+
     <hr />
-    <footer class="footer">
-      <p class="footer__text col">
+    <footer class="footer py-6 md:flex items-center justify-between text-center md:text-left">
+      <p>
         Not Only CSS is proudly
         <br />running on
         <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
       </p>
-      <p class="col text-center">
-        <a href="mailto:notonlycss@gmail.com">Write for us</a>
+      <p class="py-3 md:py-0">
+        <a href="mailto:info@notonlycss.com">Write for us</a>
       </p>
-      <ul class="footer__social col text-right">
+      <ul class="flex justify-center md:justify-end">
         <li>
           <a href="https://www.facebook.com/notOnlyCSS/" target="_blank">
             <i class="fab fa-facebook-f"></i>
           </a>
         </li>
-        <li>
+        <li class="mx-3">
           <a href="https://twitter.com/NotOnlyCSS" target="_blank">
             <i class="fab fa-twitter"></i>
           </a>
@@ -67,112 +73,20 @@ export default {
 };
 </script>
 <style>
-.container {
-  padding: 50px 0px;
-}
-.col-7 {
-  width: 70%;
-}
-.col-3{
-  width: 30%;
-}
-.d-flex {
-  display: flex;
-}
-.items-center {
-  align-items: center;
-
-}
-.justify-between {
-  justify-content: space-between;
-}
-.text-center {
-  text-align: center;
-}
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (max-width: 576px) {
-  .col-6 {
-    width: 100%;
-  }
-}
-.description__page--noBottom {
-  margin-bottom: 15px !important;
-}
-.title__page--newsletter {
-  margin-bottom: 0;
-}
-.subtitle__page {
-  margin-top: 0;
-}
-.description__page a {
-  color: #fff;
-}
-
-.col {
-  width: 33.33%;
-}
-@media screen and (max-width: 576px) {
-  .col {
-    width: 100%;
-  }
-}
-.text-center {
-  text-align: center;
-}
-
 hr {
   border-color: rgba(255, 255, 255, 0.2);
-}
-.footer__social {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-}
-@media screen and (max-width: 576px) {
-  .footer__social {
-    justify-content: center;
-  }
-}
-.footer__social li {
-  margin: 0 8px;
-}
-.footer {
-  padding: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-@media screen and (max-width: 576px) {
-  .footer {
-    display: block;
-    text-align: center;
-  }
-}
-.footer a {
-  color: #fff;
 }
 .footer__logo {
   width: 100px;
 }
 .logo {
   width: 200px;
-  z-index: 9;
-  position: relative;
 }
-.nav__link {
-  line-height: 0;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 0;
+.hamburger-container {
+  width: 30px;
+  height: 30px;
 }
 .hamburger {
-  display: none;
   width: 26px;
   height: 1px;
   background-color: #fff;
@@ -180,12 +94,6 @@ header {
   z-index: 9;
   position: relative;
 }
-@media screen and (max-width: 576px) {
-  .hamburger {
-    display: block;
-  }
-}
-
 .hamburger--active {
   background-color: transparent;
 }
@@ -218,6 +126,9 @@ header {
   top: 0;
   transform: rotate(-45deg);
 }
+.nav a {
+  font-size: 20px;
+}
 @media screen and (max-width: 576px) {
   .nav {
     visibility: hidden;
@@ -238,63 +149,21 @@ header {
     font-size: 26px;
   }
 }
+
 .nav--active {
   visibility: visible;
   opacity: 1;
   left: 0;
 }
 
-header a {
-  margin: 0 15px;
-  color: #fff;
-  text-decoration: none;
-}
-header a:first-child {
-  margin-left: 0;
-}
-@media screen and (max-width: 576px) {
-  header a:first-child {
-    margin-left: 15px;
-  }
-}
-header a:last-child {
-  margin-right: 0;
-}
-html,
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
   background-color: #0c2437;
   color: #fff;
 }
 
-.description__page {
-  font-size: 18px;
-  margin-bottom: 50px;
-}
-/* .article__img {
-  width: 200px;
-  height: 180px;
-  background-position: center;
-  background-size: cover;
-   border-radius: 5px;
-   margin-right: 30px;
-
-} */
-.article__title {
-  margin: 0;
-}
 .layout {
   max-width: 960px;
-
   margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -303,8 +172,5 @@ body {
   .layout {
     max-width: 100%;
   }
-}
-ul {
-  padding: 0;
 }
 </style>

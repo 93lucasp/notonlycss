@@ -1,6 +1,6 @@
 ---
 title: Nuxt
-abstract: The Nuxt.js event will be an oppurtunity to learn more about this framework
+abstract: The first online meetup organized by Not Only CSS will be on Nuxt.js. If you are starting to use this Vue.js framework or you want to discover more about it, Join our event!
 image: /uploads/random.jpg
 date: Coming soon
 ---

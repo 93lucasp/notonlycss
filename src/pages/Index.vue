@@ -1,28 +1,28 @@
 <template>
   <Layout>
     <ul class="articles-list">
-      <li v-for="article in $page.articles.edges" :key="article.id" class="article">
+      <li v-for="article in $page.articles.edges" :key="article.id" class="article rounded mb-16 md:flex relative p-10">
         <div>
           <div
-            class="article__preview"
+            class="article__preview rounded bg-cover bg-center md:mr-8"
             :style="{ 'background-image': 'url(' + article.node.image + ')' }"
           ></div>
         </div>
         <div>
-          <h1 class="article__title">{{article.node.title}}</h1>
-          <p class="article__abstract">{{article.node.abstract}}</p>
-          <div class="article__author">
+          <h1 class="article__title text-2xl md:text-3xl font-bold leading-tight mb-4">{{article.node.title}}</h1>
+          <p class="article__abstract text-lg md:text-xl mb-4">{{article.node.abstract}}</p>
+          <div class="flex items-center mb-5 text-sm">
             <p>{{article.node.author}}</p>
-            <span class="mx-5">-</span>
+            <span class="mx-2">-</span>
             <p>{{article.node.date}}</p>
           </div>
-          <a :href="article.node.link" class="article__link">Read</a>
+          <a :href="article.node.link" class="article__link py-2 px-10 rounded block text-center md:inline-block">Read</a>
         </div>
       </li>
     </ul>
-    <div class="pre-footer">
+    <div>
       <hr>
-      <p> Our articles are published on Medium, we write for free and only Medium<br> through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the<br> commitment.<br></p>
+      <p class="py-8 text-center"> Our articles are published on Medium, we write for free and only Medium<br> through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the<br> commitment.<br></p>
  
     </div>
 
@@ -108,35 +108,33 @@ export default {
 </script>
 
 <style>
-.pre-footer {
+/* .pre-footer {
   text-align: center;
   margin: 140px auto 20px;
-}
-.pre-footer p{
+} */
+/* .pre-footer p{
   margin-bottom: 0;
 }
 .pre-footer a{
  color: #fff;
-}
+} */
 .article {
   background-color: #0e2d43;
-  padding: 30px;
-  color: #fff;
-  margin-bottom: 50px;
-  list-style: none;
-  border-radius: 5px;
-  display: flex;
-  position: relative;
+  /* padding: 30px; */
+  /* color: #fff;
+  margin-bottom: 50px; */
+  /* list-style: none; */
+  /* border-radius: 5px; */
+  /* display: flex;
+  position: relative; */
   transition: all 0.2s;
 }
 /* .article:hover {
   background-color:#123954;
 } */
 .article__link {
-  padding: 6px 30px;
-  border-radius: 5px;
+
   background-color: #123954;
-  border-radius: 5px;
   transition: all .2s;
   border: 1px solid transparent;
 }
@@ -144,57 +142,48 @@ export default {
   border: 1px solid #fff;
   background-color: #0c2437;
 }
-@media screen and (max-width: 576px) {
-  .article {
-    display: block;
-  }
-}
+
 .article__title {
-  font-size: 30px;
-  line-height: 34px;
-  margin-top: 0;
+  
 }
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .article__title {
     font-size: 20px;
     line-height: 34px;
     margin-top: 0;
   }
-}
+} */
 .article__author {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 15px; */
 }
-.mx-5 {
+/* .mx-5 {
   margin-left: 5px;
   margin-right: 5px;
-}
+} */
 .article__author p {
-  font-size: 12px;
-  color: #f4f4f4;
+  /* font-size: 12px;
+  color: #f4f4f4; */
 }
 .article__abstract {
-  font-size: 20px;
-  margin-bottom: 0px;
+  /* font-size: 20px;
+  margin-bottom: 0px; */
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 }
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .article__abstract {
     font-size: 16px;
   }
-}
+} */
 .article__preview {
   width: 240px;
   height: 160px;
-  background-position: center;
-  background-size: cover;
-  border-radius: 5px;
-  margin-right: 30px;
+  /* border-radius: 5px; */
 }
 @media screen and (max-width: 576px) {
   .article__preview {
@@ -203,18 +192,5 @@ export default {
     margin-bottom: 30px;
   }
 }
-.articles-list {
-  width: 100%;
-}
-.article__link {
-  color: #fff;
-  text-decoration: none;
-}
-@media screen and (max-width: 576px) {
-.article__link {
-  display: block;
-  text-align: center;
-  /* width: 100%; */
-}
-}
+
 </style>

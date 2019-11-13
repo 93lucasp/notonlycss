@@ -1,20 +1,23 @@
 <template>
   <Layout>
-   
-      <h1 class="title__page">Snippets</h1>
-      <p
-        class="description__page"
-      >As frontend developers we love animations, so we decided to create a list of awesome web animations, we decided embed codepen to have the code of every single animation always available.</p>
-   
+    <h1 class="text-2xl md:text-3xl font-bold mb-3">Snippets</h1>
+    <p
+      class="text-lg md:text-xl mb-12"
+    >As frontend developers we love animations, so we decided to create a list of awesome web animations, we decided embed codepen to have the code of every single animation always available.</p>
+
     <ul>
-      <li v-for="snippet in $page.snippets.edges" :key="snippet.id" class="snippet">
-        <div class="snippet__col1">
-          <h1 class="snippet__title">{{snippet.node.title}}</h1>
-          <p class="snippet__author">by {{snippet.node.author}}</p>
-          <p class="snippet__abstract">{{snippet.node.abstract}}</p>
+      <li
+        v-for="snippet in $page.snippets.edges"
+        :key="snippet.id"
+        class="snippet p-8 mb-16 md:flex rounded"
+      >
+        <div class="lg:w-5/12 pr-4 mb-8 md:mb-0">
+          <h1 class="text-2xl md:text-3xl font-bold mb-2">{{snippet.node.title}}</h1>
+          <p class="mb-4">by {{snippet.node.author}}</p>
+          <p class="text-lg md:text-xl">{{snippet.node.abstract}}</p>
         </div>
 
-        <div v-html="snippet.node.content" class="snippet__col2"></div>
+        <div v-html="snippet.node.content" class="lg:w-7/12"></div>
       </li>
     </ul>
   </Layout>
@@ -38,11 +41,17 @@ export default {
   metaInfo: {
     title: "Not Only CSS | Snippets",
     meta: [
-      { name: 'description', content: 'Snippets of awesome animations' },
-      { property: 'og:title', content: 'Not Only CSS | Snippets' },
-      { property: 'og:description', content: 'Articles and tips for frontend developers' },
-      { property: 'og:image', content: 'https://www.notonlycss.com/uploads/share.png' },
-      { property: 'og:url', content: 'https://www.notonlycss.com/snippets' },
+      { name: "description", content: "Snippets of awesome animations" },
+      { property: "og:title", content: "Not Only CSS | Snippets" },
+      {
+        property: "og:description",
+        content: "Articles and tips for frontend developers"
+      },
+      {
+        property: "og:image",
+        content: "https://www.notonlycss.com/uploads/share.png"
+      },
+      { property: "og:url", content: "https://www.notonlycss.com/snippets" }
     ]
   }
 };
@@ -50,33 +59,5 @@ export default {
 <style>
 .snippet {
   background-color: #0e2d43;
-  padding: 30px;
-  color: #fff;
-  margin-bottom: 50px;
-  list-style: none;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-}
-.snippet__col1 {
-  width: 45%;
-  padding-right: 15px;
-}
-.snippet__col2 {
-  width: 55%;
-}
-.snippet__title {
-  font-size: 30px;
-  line-height: 16px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.snippet__abstract {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-.snippet__author {
-  font-size: 14px;
-  margin-bottom: 15px;
 }
 </style>

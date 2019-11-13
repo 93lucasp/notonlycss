@@ -1,22 +1,22 @@
 <template>
   <Layout>
-    <h1 class="title__page">About us</h1>
-    <p class="description__page description__page--noBottom">Our mission is to help <b>frontend developers</b> to improve their knowledges. <br> We provide <b>articles, snippets of animations, online events and weekly newsletter to keep you updated</b>. </p>
-    <p class="description__page">Our articles are published on Medium, we write for free and only Medium through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the commitment.<br></p>
-    <h1 class="title__page">Follow Not Only CSS on social networks </h1>
-    <ul class="social description__page">
+    <h1 class="text-2xl md:text-3xl font-bold mb-3">About us</h1>
+    <p class="text-lg md:text-xl mb-2">Our mission is to help <b>frontend developers</b> to improve their knowledges. <br> We provide <b>articles, snippets of animations, online events and weekly newsletter to keep you updated</b>. </p>
+    <p class="text-lg md:text-xl mb-12">Our articles are published on Medium, we write for free and only Medium through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the commitment.<br></p>
+    <h1 class="text-2xl md:text-3xl font-bold mb-3">Follow Not Only CSS on social networks </h1>
+    <ul class="flex items-center mb-12">
       <li>
-          <a href="https://www.facebook.com/notOnlyCSS/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.facebook.com/notOnlyCSS/" target="_blank"><i class="fab fa-facebook-f md:text-3xl"></i></a>
+        </li>
+        <li class="mx-4">
+          <a href="https://twitter.com/NotOnlyCSS" target="_blank"><i class="fab fa-twitter md:text-3xl"></i></a>
         </li>
         <li>
-          <a href="https://twitter.com/NotOnlyCSS" target="_blank"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="https://medium.com/notonlycss" target="_blank"><i class="fab fa-medium-m"></i></a>
+          <a href="https://medium.com/notonlycss" target="_blank"><i class="fab fa-medium-m md:text-3xl"></i></a>
         </li>
     </ul>
-     <h1 class="title__page">Write for us</h1>
-    <p class="description__page ">We are always looking for talended writers, if you would like to write for us just drom us few line <a href="mailto:info@notonlycss.com">here</a> </p>
+     <h1 class="text-2xl md:text-3xl font-bold mb-3">Write for us</h1>
+    <p class="text-lg md:text-xl mb-16">We are always looking for talended writers, if you would like to write for us just drom us few line <a href="mailto:info@notonlycss.com" class="underline">here</a> </p>
   </Layout>
 </template>
 
@@ -35,19 +35,5 @@ export default {
 }
 </script>
 <style>
-    .social {
-      display: flex;
-      list-style: none;
-    }
-    .social li{
-      margin-right: 30px;
-      
-    }
-    .social a{
-      color: #fff;
-
-    }
-    .social a i{
-      font-size: 26px;
-    }
+   
 </style>
