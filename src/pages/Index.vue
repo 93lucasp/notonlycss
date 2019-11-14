@@ -12,7 +12,9 @@
           href="https://medium.com/creators"
           target="_blank"
           rel="noopener noreferrer"
-        >Medium Partner Program</a> allows us to earn money for the commitment.
+        >Medium Partner Program</a> allows us to earn money for the commitment. <br>
+        The links of Medium that we provide guarantee anyone <b>free access</b> to all our articles.
+
       </p>
     </div>
 
