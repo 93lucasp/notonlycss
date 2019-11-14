@@ -8,10 +8,7 @@
       <p class="ml-6 font-light">
         Our articles are published on
         <span class="font-bold">Medium</span>, we write for free and only Medium through the
-        <a
-          href="https://medium.com/creators"
-          target="_blank"
-        >Medium Partner Program</a> allows us to earn money for the commitment.
+        <a href="https://medium.com/creators" target="_blank" rel="noopener noreferrer">Medium Partner Program</a> allows us to earn money for the commitment.
       </p>
     </div>
 
