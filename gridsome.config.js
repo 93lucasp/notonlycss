@@ -8,6 +8,7 @@
 const tailwindcss = require("tailwindcss")
 module.exports = {
   siteName: 'Not Only CSS',
+  siteUrl: 'https://www.notonlycss.com/',
   css: {
     loaderOptions: {
       postcss: {
@@ -18,6 +19,35 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        cacheTime: 600000, // default
+        // exclude: ['/exclude-me'],
+        config: {
+          '/events/*': {
+            changefreq: 'weekly',
+            priority: 0.9
+          },
+          '/about': {
+            changefreq: 'monthly',
+            priority: 0.6
+          },
+          '/snippets': {
+            changefreq: 'weekly',
+            priority: 0.8
+          },
+          '/newsletter': {
+            changefreq: 'monthly',
+            priority: 0.8
+          },
+          '/': {
+            changefreq: 'weekly',
+            priority: 1.0
+          }
+        }
+      }
+    },
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
