@@ -1,7 +1,7 @@
 <template>
   <Layout>
-    <h1 class="text-2xl md:text-3xl font-bold mb-3">Events</h1>
-    <p class="text-lg md:text-xl mb-12">
+    <h1 class="text-3xl md:text-4xl font-bold mb-3">Events</h1>
+    <p class="text-lg md:text-xl mb-12 ">
       We love meetup, we are an international community so why don't try to organize online meetup?
       <br />From here is born the idea.
       <br />Our meetup will be on frontend technologies, join them and be part of our community.
@@ -16,9 +16,11 @@
         <div class="event__body">
           <div>
             <h1 class="text-2xl md:text-3xl font-bold mb-2">{{event.node.title}}</h1>
-            <p class="text-lg md:text-xl mb-4">{{event.node.abstract}}</p>
+            <p class="text-lg md:text-xl mb-4 font-light">{{event.node.abstract}}</p>
             <div class="mb-4">
-              <i>Date: <time>{{event.node.date}}</time></i>
+              <p>
+              Date: <time>{{event.node.date}}</time>
+              </p>
             </div>
             <g-link :to="event.node.path" class="event__link py-2 px-10 rounded block text-center md:inline-block">Discover</g-link>
           </div>

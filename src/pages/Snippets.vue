@@ -1,9 +1,9 @@
 <template>
   <Layout>
-    <h1 class="text-2xl md:text-3xl font-bold mb-3">Snippets</h1>
+    <h1 class="text-3xl md:text-4xl font-semibold mb-3">Snippets</h1>
     <p
-      class="text-lg md:text-xl mb-12"
-    >As frontend developers we love animations, so we decided to create a list of awesome web animations, we decided embed codepen to have the code of every single animation always available.</p>
+      class="text-lg md:text-xl mb-12 "
+    >As <b>Frontend Developers</b> we love <b>Animations</b>, so we decided to create a list of awesome web animations, we decided to embed codepen to have the code of every single animation always available for <b>everyone</b>.</p>
 
     <ul>
       <li
@@ -13,8 +13,8 @@
       >
         <div class="lg:w-5/12 pr-4 mb-8 md:mb-0">
           <h1 class="text-2xl md:text-3xl font-bold mb-2">{{snippet.node.title}}</h1>
-          <p class="mb-4">by {{snippet.node.author}}</p>
-          <p class="text-lg md:text-xl">{{snippet.node.abstract}}</p>
+          <p class="mb-4 ">by {{snippet.node.author}}</p>
+          <p class="text-lg md:text-xl font-light">{{snippet.node.abstract}}</p>
         </div>
 
         <div v-html="snippet.node.content" class="lg:w-7/12"></div>

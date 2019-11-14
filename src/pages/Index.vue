@@ -1,7 +1,22 @@
 <template>
   <Layout>
+    <h1 class="text-3xl md:text-4xl font-bold mb-3">Articles</h1>
+    <div class="flex items-start rounded bg-primary px-8 py-3 mb-16">
+      <div >
+        <i class="fas fa-info text-xs"></i>
+      </div>
+      <p class="ml-6 font-light">
+        Our articles are published on <span class="font-bold">Medium</span>, we write for free and only Medium through the
+        <a href="https://medium.com/creators" target="_blank" >Medium Partner Program</a> allows us to earn money for the commitment.
+      </p>
+    </div>
+
     <ul class="articles-list">
-      <li v-for="article in $page.articles.edges" :key="article.id" class="article rounded mb-16 md:flex relative p-10">
+      <li
+        v-for="article in $page.articles.edges"
+        :key="article.id"
+        class="article rounded mb-16 md:flex relative p-10"
+      >
         <div>
           <div
             class="article__preview rounded bg-cover bg-center md:mr-8"
@@ -9,22 +24,25 @@
           ></div>
         </div>
         <div>
-          <h1 class="article__title text-2xl md:text-3xl font-bold leading-tight mb-4">{{article.node.title}}</h1>
-          <p class="article__abstract text-lg md:text-xl mb-4">{{article.node.abstract}}</p>
-          <div class="flex items-center mb-5 text-sm">
+          <h1
+            class="article__title text-2xl md:text-3xl font-bold leading-tight mb-4"
+          >{{article.node.title}}</h1>
+          <p class="article__abstract text-lg md:text-xl mb-4 font-light">{{article.node.abstract}}</p>
+          <div class="flex items-center mb-5 text-sm ">
             <p>{{article.node.author}}</p>
             <span class="mx-2">-</span>
             <p>{{article.node.date}}</p>
           </div>
-          <a :href="article.node.link" class="article__link py-2 px-10 rounded block text-center md:inline-block">Read</a>
+          <a
+            :href="article.node.link"
+            class="article__link py-2 px-10 rounded block text-center md:inline-block"
+          >
+            Read on Medium
+            <i class="fas fa-external-link-alt ml-2"></i>
+          </a>
         </div>
       </li>
     </ul>
-    <div>
-      <hr>
-      <p class="py-8 text-center"> Our articles are published on Medium, we write for free and only Medium<br> through the <a href="https://medium.com/creators" target="_blank">Medium Partner Program</a> allows us to earn money for the<br> commitment.<br></p>
- 
-    </div>
 
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
     <!-- <g-image alt="Example image" src="~/favicon.png" width="135" />
@@ -96,12 +114,21 @@ export default {
   metaInfo: {
     title: "Not Only CSS",
     meta: [
-      { name: 'description', content: 'Articles and tips for frontend developers' },
-      { property: 'og:title', content: 'Not Only CSS' },
-      { property: 'og:description', content: 'Articles and tips for frontend developers' },
-      { property: 'og:image', content: 'https://www.notonlycss.com/uploads/share.png' },
-      { property: 'og:url', content: 'https://www.notonlycss.com' },
-      { name: 'robots', content: 'index, follow' },
+      {
+        name: "description",
+        content: "Articles and tips for frontend developers"
+      },
+      { property: "og:title", content: "Not Only CSS" },
+      {
+        property: "og:description",
+        content: "Articles and tips for frontend developers"
+      },
+      {
+        property: "og:image",
+        content: "https://www.notonlycss.com/uploads/share.png"
+      },
+      { property: "og:url", content: "https://www.notonlycss.com" },
+      { name: "robots", content: "index, follow" }
     ]
   }
 };
@@ -132,10 +159,12 @@ export default {
 /* .article:hover {
   background-color:#123954;
 } */
+.bg-primary {
+  background-color: #0e2d43;
+}
 .article__link {
-
   background-color: #123954;
-  transition: all .2s;
+  transition: all 0.2s;
   border: 1px solid transparent;
 }
 .article__link:hover {
@@ -144,7 +173,6 @@ export default {
 }
 
 .article__title {
-  
 }
 /* @media screen and (max-width: 576px) {
   .article__title {
@@ -192,5 +220,4 @@ export default {
     margin-bottom: 30px;
   }
 }
-
 </style>

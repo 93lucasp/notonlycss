@@ -20,7 +20,7 @@
       </nav>
     </header>
     <hr class="mb-16" />
-    <div class="container">
+    <div class="container mb-40">
       <slot />
     </div>
 
@@ -29,25 +29,25 @@
       <p>
         Not Only CSS is proudly
         <br />running on
-        <a href="https://www.netlify.com/" target="_blank">Netlify</a>.
+        <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a>.
       </p>
       <p class="py-3 md:py-0">
         <a href="mailto:info@notonlycss.com">Write for us</a>
       </p>
       <ul class="flex justify-center md:justify-end">
         <li>
-          <a href="https://www.facebook.com/notOnlyCSS/" target="_blank">
-            <i class="fab fa-facebook-f"></i>
+          <a href="https://www.facebook.com/notOnlyCSS/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <i class="fab fa-facebook-f text-2xl"></i>
           </a>
         </li>
-        <li class="mx-3">
-          <a href="https://twitter.com/NotOnlyCSS" target="_blank">
-            <i class="fab fa-twitter"></i>
+        <li class="mx-5">
+          <a href="https://twitter.com/NotOnlyCSS" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fab fa-twitter text-2xl"></i>
           </a>
         </li>
         <li>
-          <a href="https://medium.com/notonlycss" target="_blank">
-            <i class="fab fa-medium-m"></i>
+          <a href="https://medium.com/notonlycss" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+            <i class="fab fa-medium-m text-2xl"></i>
           </a>
         </li>
       </ul>
@@ -66,15 +66,17 @@ query {
 export default {
   methods: {
     hamburger: function(el) {
-      $(".hamburger").toggleClass("hamburger--active");
-      $("nav").toggleClass("nav--active");
+      console.log()
+      document.querySelector(".hamburger").classList.toggle("hamburger--active");
+      document.querySelector("nav").classList.toggle("nav--active");
     }
   }
 };
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
 hr {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 .footer__logo {
   width: 100px;
