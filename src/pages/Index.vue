@@ -100,7 +100,7 @@
 
 <page-query>
 query {
-  articles: allArticles(order: ASC) {
+  articles: allArticles(order: DESC) {
     edges {
       node {
         title
