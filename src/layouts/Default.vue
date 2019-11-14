@@ -29,24 +29,43 @@
       <p>
         Not Only CSS is proudly
         <br />running on
-        <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a>.
+        <a
+          href="https://www.netlify.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Netlify</a>.
       </p>
       <p class="py-3 md:py-0">
         <a href="mailto:info@notonlycss.com">Write for us</a>
       </p>
       <ul class="flex justify-center md:justify-end">
         <li>
-          <a href="https://www.facebook.com/notOnlyCSS/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <a
+            href="https://www.facebook.com/notOnlyCSS/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
             <i class="fab fa-facebook-f text-2xl"></i>
           </a>
         </li>
         <li class="mx-5">
-          <a href="https://twitter.com/NotOnlyCSS" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <a
+            href="https://twitter.com/NotOnlyCSS"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+          >
             <i class="fab fa-twitter text-2xl"></i>
           </a>
         </li>
         <li>
-          <a href="https://medium.com/notonlycss" target="_blank" rel="noopener noreferrer" aria-label="Medium">
+          <a
+            href="https://medium.com/notonlycss"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Medium"
+          >
             <i class="fab fa-medium-m text-2xl"></i>
           </a>
         </li>
@@ -66,20 +85,34 @@ query {
 export default {
   methods: {
     hamburger: function(el) {
-      console.log()
       document.querySelector(".hamburger").classList.toggle("hamburger--active");
       document.querySelector("nav").classList.toggle("nav--active");
     }
   }
 };
 </script>
-<style>
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+<style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 hr {
   border-color: rgba(255, 255, 255, 0.1);
 }
-.footer__logo {
-  width: 100px;
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #0c2437;
+  color: #fff;
+}
+.bg-primary {
+  background-color: #0e2d43;
+}
+.layout {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  @media screen and (max-width: 576px) {
+    max-width: 100%;
+  }
 }
 .logo {
   width: 200px;
@@ -95,44 +128,45 @@ hr {
   position: relative;
   z-index: 9;
   position: relative;
-}
-.hamburger--active {
-  background-color: transparent;
-}
-.hamburger::before {
-  content: "";
-  width: 30px;
-  height: 1px;
-  background-color: #fff;
-  top: -8px;
-  position: absolute;
-  transition: all 0.2s;
-}
-.hamburger::after {
-  content: "";
-  width: 30px;
-  height: 1px;
-  background-color: #fff;
-  top: 8px;
-  position: absolute;
-  transition: all 0.2s;
+
+  &:before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    top: -8px;
+    position: absolute;
+    transition: all 0.2s;
+  }
+  &:after {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    top: 8px;
+    position: absolute;
+    transition: all 0.2s;
+  }
+  &--active {
+    background-color: transparent;
+    &:before {
+      background-color: #fff;
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &:after {
+      background-color: #fff;
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
 }
 
-.hamburger--active::before {
-  background-color: #fff;
-  top: 0;
-  transform: rotate(45deg);
-}
-.hamburger--active::after {
-  background-color: #fff;
-  top: 0;
-  transform: rotate(-45deg);
-}
-.nav a {
-  font-size: 20px;
-}
-@media screen and (max-width: 576px) {
-  .nav {
+.nav {
+  a {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 576px) {
     visibility: hidden;
     position: fixed;
     left: -100%;
@@ -144,35 +178,16 @@ hr {
     padding-top: 100px;
     opacity: 0;
     z-index: 1;
+    a {
+      display: block;
+      padding: 30px;
+      font-size: 26px;
+    }
   }
-  .nav a {
-    display: block;
-    padding: 30px;
-    font-size: 26px;
-  }
-}
-
-.nav--active {
-  visibility: visible;
-  opacity: 1;
-  left: 0;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: #0c2437;
-  color: #fff;
-}
-
-.layout {
-  max-width: 960px;
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-@media screen and (max-width: 576px) {
-  .layout {
-    max-width: 100%;
+  &--active {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
   }
 }
 </style>

@@ -9,7 +9,7 @@
       <li
         v-for="snippet in $page.snippets.edges"
         :key="snippet.id"
-        class="snippet p-8 mb-16 md:flex rounded"
+        class="snippet p-8 mb-16 md:flex rounded bg-primary"
       >
         <div class="lg:w-5/12 pr-4 mb-8 md:mb-0">
           <h1 class="text-2xl md:text-3xl font-bold mb-2">{{snippet.node.title}}</h1>
@@ -57,7 +57,5 @@ export default {
 };
 </script>
 <style>
-.snippet {
-  background-color: #0e2d43;
-}
+
 </style>

@@ -2,12 +2,16 @@
   <Layout>
     <h1 class="text-3xl md:text-4xl font-bold mb-3">Articles</h1>
     <div class="flex items-start rounded bg-primary px-8 py-3 mb-16">
-      <div >
+      <div>
         <i class="fas fa-info text-xs"></i>
       </div>
       <p class="ml-6 font-light">
-        Our articles are published on <span class="font-bold">Medium</span>, we write for free and only Medium through the
-        <a href="https://medium.com/creators" target="_blank" >Medium Partner Program</a> allows us to earn money for the commitment.
+        Our articles are published on
+        <span class="font-bold">Medium</span>, we write for free and only Medium through the
+        <a
+          href="https://medium.com/creators"
+          target="_blank"
+        >Medium Partner Program</a> allows us to earn money for the commitment.
       </p>
     </div>
 
@@ -15,7 +19,7 @@
       <li
         v-for="article in $page.articles.edges"
         :key="article.id"
-        class="article rounded mb-16 md:flex relative p-10"
+        class="article rounded mb-16 md:flex relative p-10 bg-primary"
       >
         <div>
           <div
@@ -28,7 +32,7 @@
             class="article__title text-2xl md:text-3xl font-bold leading-tight mb-4"
           >{{article.node.title}}</h1>
           <p class="article__abstract text-lg md:text-xl mb-4 font-light">{{article.node.abstract}}</p>
-          <div class="flex items-center mb-5 text-sm ">
+          <div class="flex items-center mb-5 text-sm">
             <p>{{article.node.author}}</p>
             <span class="mx-2">-</span>
             <p>{{article.node.date}}</p>
@@ -134,90 +138,33 @@ export default {
 };
 </script>
 
-<style>
-/* .pre-footer {
-  text-align: center;
-  margin: 140px auto 20px;
-} */
-/* .pre-footer p{
-  margin-bottom: 0;
-}
-.pre-footer a{
- color: #fff;
-} */
+<style lang="scss">
 .article {
-  background-color: #0e2d43;
-  /* padding: 30px; */
-  /* color: #fff;
-  margin-bottom: 50px; */
-  /* list-style: none; */
-  /* border-radius: 5px; */
-  /* display: flex;
-  position: relative; */
   transition: all 0.2s;
-}
-/* .article:hover {
-  background-color:#123954;
-} */
-.bg-primary {
-  background-color: #0e2d43;
-}
-.article__link {
-  background-color: #123954;
-  transition: all 0.2s;
-  border: 1px solid transparent;
-}
-.article__link:hover {
-  border: 1px solid #fff;
-  background-color: #0c2437;
-}
-
-.article__title {
-}
-/* @media screen and (max-width: 576px) {
-  .article__title {
-    font-size: 20px;
-    line-height: 34px;
-    margin-top: 0;
+  &__link {
+    background-color: #123954;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid #fff;
+      background-color: #0c2437;
+    }
   }
-} */
-.article__author {
-  /* display: flex;
-  align-items: center;
-  margin-bottom: 15px; */
-}
-/* .mx-5 {
-  margin-left: 5px;
-  margin-right: 5px;
-} */
-.article__author p {
-  /* font-size: 12px;
-  color: #f4f4f4; */
-}
-.article__abstract {
-  /* font-size: 20px;
-  margin-bottom: 0px; */
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  text-overflow: ellipsis;
-}
-/* @media screen and (max-width: 576px) {
-  .article__abstract {
-    font-size: 16px;
+  &__abstract {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
   }
-} */
-.article__preview {
-  width: 240px;
-  height: 160px;
-  /* border-radius: 5px; */
-}
-@media screen and (max-width: 576px) {
-  .article__preview {
-    width: 100%;
+  &__preview {
+    width: 240px;
     height: 160px;
-    margin-bottom: 30px;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      height: 160px;
+      margin-bottom: 30px;
+    }
   }
 }
 </style>
