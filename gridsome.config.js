@@ -19,6 +19,12 @@ module.exports = {
   },
   plugins: [
     {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-152557322-1'
+      }
+    },
+    {
       use: 'gridsome-plugin-purgecss',
       // default options, the following will be included if you don't provide anything
       options: {
