@@ -51,7 +51,23 @@ export default {
         property: "og:image",
         content: "https://www.notonlycss.com/uploads/share.png"
       },
-      { property: "og:url", content: "https://www.notonlycss.com/snippets" }
+      { property: "og:url", content: "https://www.notonlycss.com/snippets" },
+      {
+        property: "twitter:card",
+        content: "summary"
+      },
+      {
+        property: "twitter:title",
+        content: "Not Only CSS | Snippets"
+      },
+      {
+        property: "og:description",
+        content: "Articles and tips for frontend developers"
+      },
+      {
+        property: "twitter:image",
+        content: "https://www.notonlycss.com/uploads/share.png"
+      },
     ]
   }
 };

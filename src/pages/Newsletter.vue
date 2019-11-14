@@ -18,6 +18,22 @@ export default {
       { property: 'og:description', content: 'Join the newsletter of Not Only CSS to be always updated on frontend technologies' },
       { property: 'og:image', content: 'https://www.notonlycss.com/uploads/share.png' },
       { property: 'og:url', content: 'https://www.notonlycss.com/newsletter' },
+      {
+        property: "twitter:card",
+        content: "summary"
+      },
+      {
+        property: "twitter:title",
+        content: "Not Only CSS | Newsletter"
+      },
+      {
+        property: "og:description",
+        content: "Articles and tips for frontend developers"
+      },
+      {
+        property: "twitter:image",
+        content: "https://www.notonlycss.com/uploads/share.png"
+      },
     ]
   }
 }

@@ -68,6 +68,22 @@ export default {
         property: "og:image",
         content: "https://www.notonlycss.com/uploads/share.png"
       },
+      {
+        property: "twitter:card",
+        content: "summary"
+      },
+      {
+        property: "twitter:title",
+        content: "Not Only CSS | Events"
+      },
+      {
+        property: "og:description",
+        content: "Articles and tips for frontend developers"
+      },
+      {
+        property: "twitter:image",
+        content: "https://www.notonlycss.com/uploads/share.png"
+      },
       { property: "og:url", content: "https://www.notonlycss.com/events" },
       { name: "robots", content: "index, follow" }
     ]
