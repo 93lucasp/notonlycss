@@ -8,7 +8,11 @@
       <p class="ml-6 font-light">
         Our articles are published on
         <span class="font-bold">Medium</span>, we write for free and only Medium through the
-        <a href="https://medium.com/creators" target="_blank" rel="noopener noreferrer">Medium Partner Program</a> allows us to earn money for the commitment.
+        <a
+          href="https://medium.com/creators"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Medium Partner Program</a> allows us to earn money for the commitment.
       </p>
     </div>
 
@@ -32,7 +36,7 @@
           <div class="flex items-center mb-5 text-sm">
             <p>{{article.node.author}}</p>
             <span class="mx-2">-</span>
-            <p>{{article.node.date}}</p>
+            <p>{{formatDate(article.node.date)}}</p>
           </div>
           <a
             :href="article.node.link"
@@ -147,6 +151,16 @@ export default {
       { property: "og:url", content: "https://www.notonlycss.com" },
       { name: "robots", content: "index, follow" }
     ]
+  },
+  methods: {
+    formatDate(date) {
+      var monthNames= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      var newDate = new Date(date)
+      var year = newDate.getFullYear();
+      var month = monthNames[newDate.getMonth()];
+      var dt = newDate.getDate();
+      return (month + ' ' + dt + ', ' + year)
+    }
   }
 };
 </script>

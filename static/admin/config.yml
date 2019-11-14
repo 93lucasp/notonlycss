@@ -39,7 +39,6 @@ collections:
         - {label: "Link", name: "link", widget: "string"}
         - {label: "Author", name: "author", widget: "string"}
         - {label: "Date", name: "date", widget: "datetime"}
-        - {label: "Tags", name: "tags", widget: "list"}
   # - name: "blog" # Used in routes, e.g., /admin/collections/blog
   #   label: "Blog" # Used in the UI
   #   folder: "blog" # The path to the folder where the documents are stored
