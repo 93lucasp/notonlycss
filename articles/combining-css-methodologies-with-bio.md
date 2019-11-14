@@ -7,7 +7,7 @@ abstract: >-
   no best practice considered etc.
 image: /uploads/1_pr0ozleih_nzlp8r-g2paw.jpeg
 link: >-
-  https://medium.com/notonlycss/combining-css-methodologies-with-bio-136055df77aa
+  https://medium.com/notonlycss/combining-css-methodologies-with-bio-136055df77aa?source=friends_link&sk=ba5965049a8baa912b9d3c6c4045d00e
 author: Luca Spezzano
 date: 2018-10-10T20:05:00.000Z
 ---
