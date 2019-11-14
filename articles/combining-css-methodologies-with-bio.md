@@ -9,6 +9,6 @@ image: /uploads/1_pr0ozleih_nzlp8r-g2paw.jpeg
 link: >-
   https://medium.com/notonlycss/combining-css-methodologies-with-bio-136055df77aa?source=friends_link&sk=ba5965049a8baa912b9d3c6c4045d00e
 author: Luca Spezzano
-date: 'Oct 10, 2018'
+date: 2017-09-25T22:00:00.000Z
 ---
 
