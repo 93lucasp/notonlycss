@@ -6,7 +6,7 @@ abstract: >-
   shows how to achieve this easily.
 image: /uploads/1_nvo03mmpra8hmnlhnavcdw.png
 link: >-
-  https://medium.com/notonlycss/android-recyclerview-animated-transition-between-grid-and-list-layouts-b2309e1d9f19
+  https://medium.com/notonlycss/android-recyclerview-animated-transition-between-grid-and-list-layouts-b2309e1d9f19?source=friends_link&sk=9fc2c81f303f9a02146d07ee80aa25b5
 author: Alla Dubovska
 date: 2018-08-10T20:04:00.000Z
 ---
