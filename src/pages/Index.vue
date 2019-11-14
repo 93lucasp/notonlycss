@@ -38,10 +38,7 @@
             <span class="mx-2">-</span>
             <p>{{formatDate(article.node.date)}}</p>
           </div>
-          <a
-            :href="article.node.link"
-            class="article__link py-2 px-10 rounded block text-center md:inline-block"
-          >
+          <a :href="article.node.link" target="_blank" class="article__link py-2 px-10 rounded block text-center md:inline-block">
             Read on Medium
             <i class="fas fa-external-link-alt ml-2"></i>
           </a>
