@@ -7,7 +7,7 @@
 //gridsome.config.js
 const tailwindcss = require("tailwindcss")
 module.exports = {
-  siteName: 'Not Only CSS ciao',
+  siteName: 'Not Only CSS',
   siteUrl: 'https://www.notonlycss.com/',
   css: {
     loaderOptions: {
