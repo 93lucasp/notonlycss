@@ -116,7 +116,6 @@ query {
 <script>
 export default {
   metaInfo: {
-    title: "Not Only CSS",
     meta: [
       {
         name: "description",

@@ -56,7 +56,7 @@ query {
 <script>
 export default {
   metaInfo: {
-    title: "Not Only CSS | Events",
+    title: "Events",
     meta: [
       { name: "description", content: "The events of Not Only CSS" },
       { property: "og:title", content: "Not Only CSS | Events" },

@@ -23,7 +23,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Not Only CSS | About",
+    title: "About",
     meta: [
       { name: 'description', content: 'Articles and tips for frontend developers' },
       { property: 'og:title', content: 'Not Only CSS | About' },

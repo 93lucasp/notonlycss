@@ -39,7 +39,7 @@ query {
 <script>
 export default {
   metaInfo: {
-    title: "Not Only CSS | Snippets",
+    title: "Snippets",
     meta: [
       { name: "description", content: "Snippets of awesome animations" },
       { property: "og:title", content: "Not Only CSS | Snippets" },

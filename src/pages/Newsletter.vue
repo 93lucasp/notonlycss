@@ -11,7 +11,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Not Only CSS | Newsletter",
+    title: "Newsletter",
     meta: [
       { name: 'description', content: 'Join the newsletter of Not Only CSS to be always updated on frontend technologies' },
       { property: 'og:title', content: 'Not Only CSS | Newsletter' },
