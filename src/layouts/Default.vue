@@ -35,7 +35,7 @@
         >Netlify</a>.
       </p>
       <p class="py-3 md:py-0">
-        <a href="mailto:info@notonlycss.com">Write for us</a>
+        <a href="mailto:info@notonlycss.com">Write for us <i class="fas fa-pencil-alt ml-2"></i></a>
       </p>
       <ul class="flex justify-center md:justify-end">
         <li>
