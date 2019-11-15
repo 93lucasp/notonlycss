@@ -1,7 +1,6 @@
 <template>
   <div class="layout">
     <header class="flex items-center justify-between py-6">
-      <!-- <g-link to="/">{{ $static.metadata.siteName }}</g-link> -->
       <g-link to="/" class="nav__link">
         <g-image alt="Logo Not Only CSS" src="~/images/notonlycss.png" class="logo relative z-10" />
       </g-link>
@@ -74,13 +73,7 @@
   </div>
 </template>
 
-<static-query>
-query {
-  metadata {
-    siteName
-  }
-}
-</static-query>
+
 <script>
 export default {
   methods: {
