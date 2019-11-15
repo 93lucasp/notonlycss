@@ -58,11 +58,11 @@ export default {
   metaInfo: {
     title: "Events",
     meta: [
-      { name: "description", content: "The events of Not Only CSS" },
+      { name: "description", content: "The events of Not Only CSS for frontend developers" },
       { property: "og:title", content: "Not Only CSS | Events" },
       {
         property: "og:description",
-        content: "Articles and tips for frontend developers"
+        content: "The events of Not Only CSS for frontend developers"
       },
       {
         property: "og:image",
@@ -78,7 +78,7 @@ export default {
       },
       {
         property: "og:description",
-        content: "Articles and tips for frontend developers"
+        content: "The events of Not Only CSS for frontend developers"
       },
       {
         property: "twitter:image",

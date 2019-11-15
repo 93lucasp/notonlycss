@@ -41,11 +41,11 @@ export default {
   metaInfo: {
     title: "Snippets",
     meta: [
-      { name: "description", content: "Snippets of awesome animations" },
+      { name: "description", content: "Snippets of web animations for frontend developers" },
       { property: "og:title", content: "Not Only CSS | Snippets" },
       {
         property: "og:description",
-        content: "Articles and tips for frontend developers"
+        content: "Snippets of web animations for frontend developers"
       },
       {
         property: "og:image",
@@ -62,7 +62,7 @@ export default {
       },
       {
         property: "og:description",
-        content: "Articles and tips for frontend developers"
+        content: "Snippets of web animations for frontend developers"
       },
       {
         property: "twitter:image",

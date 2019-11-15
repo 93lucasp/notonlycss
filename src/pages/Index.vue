@@ -119,12 +119,12 @@ export default {
     meta: [
       {
         name: "description",
-        content: "Articles and tips for frontend developers"
+        content: "Articles, snippets, events and newsletter for frontend developers"
       },
       { property: "og:title", content: "Not Only CSS" },
       {
         property: "og:description",
-        content: "Articles and tips for frontend developers"
+        content: "Articles, snippets, events and newsletter for frontend developers"
       },
       {
         property: "og:image",
@@ -140,7 +140,7 @@ export default {
       },
       {
         property: "og:description",
-        content: "Articles and tips for frontend developers"
+        content: "Articles, snippets, events and newsletter for frontend developers"
       },
       {
         property: "twitter:image",

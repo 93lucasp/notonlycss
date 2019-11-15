@@ -25,7 +25,7 @@ export default {
   metaInfo: {
     title: "About",
     meta: [
-      { name: 'description', content: 'Articles and tips for frontend developers' },
+      { name: 'description', content: 'Articles, snippets, events and newsletter for frontend developers' },
       { property: 'og:title', content: 'Not Only CSS | About' },
       { property: 'og:description', content: 'Articles and tips for frontend developers' },
       { property: 'og:image', content: 'https://www.notonlycss.com/uploads/share.png' },
@@ -40,7 +40,7 @@ export default {
       },
       {
         property: "og:description",
-        content: "Articles and tips for frontend developers"
+        content: "Articles, snippets, events and newsletter for frontend developers"
       },
       {
         property: "twitter:image",

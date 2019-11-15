@@ -28,7 +28,7 @@ export default {
       },
       {
         property: "og:description",
-        content: "Articles and tips for frontend developers"
+        content: "Join the newsletter of Not Only CSS to be always updated on frontend technologies"
       },
       {
         property: "twitter:image",
