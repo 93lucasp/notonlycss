@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="eventPage">
-      <h1 class="text-3xl md:text-4xl font-bold mb-3">{{$page.event.title}}</h1>
+      <h1 class="text-3xl md:text-4xl font-bold mb-6">{{$page.event.title}}</h1>
       <div
         class="eventPage__image"
         :style="{ 'background-image': 'url(' + $page.event.image + ')' }"
@@ -38,6 +38,7 @@ export default {
   padding: 30px;
   margin-bottom: 100px;
   h1 {
+    margin-top: 30px;
     font-size: 2em;
     font-weight: bold;
   }
@@ -62,8 +63,15 @@ export default {
     font-weight: bold;
   }
   p {
-    margin-bottom: 20px;
+    
     font-size: 18px;
+  }
+  ul {
+    list-style: disc;
+    padding-inline-start: 40px;
+  }
+  a {
+    text-decoration: underline;
   }
 }
 .eventPage__image {
