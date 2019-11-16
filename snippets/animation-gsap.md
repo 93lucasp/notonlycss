@@ -1,7 +1,10 @@
 ---
 title: Animation gsap
 author: Luca Spezzano
-abstract: A basic animation built with the GSAP
+abstract: >-
+  An amazing animation perfect for opening your website, animation created with
+  GSAP!
+date: 2019-11-16T11:43:40.080Z
 ---
 <iframe height="332" style="width: 100%;" scrolling="no" title="GSAP animation" src="https://codepen.io/93lucasp/embed/xBQGLv?height=332&theme-id=default&default-tab=result" frameborder="no" allowtransparency="true" allowfullscreen="true">
 
