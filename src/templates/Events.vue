@@ -35,12 +35,15 @@ export default {
 <style lang="scss">
 .eventPage {
   background-color: #0e2d43;
-  padding: 30px;
+  padding: 50px;
   margin-bottom: 100px;
   h1 {
     margin-top: 30px;
     font-size: 2em;
     font-weight: bold;
+    &:first-child {
+      margin-top: 0;
+    }
   }
   h2 {
     font-size: 1.5em;
