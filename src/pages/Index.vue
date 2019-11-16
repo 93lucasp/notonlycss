@@ -151,12 +151,9 @@ export default {
   },
   methods: {
     formatDate(date) {
-      var monthNames= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
       var newDate = new Date(date)
-      var year = newDate.getFullYear();
-      var month = monthNames[newDate.getMonth()];
-      var dt = newDate.getDate();
-      return (month + ' ' + dt + ', ' + year)
+      var options =  { year: 'numeric', month: 'short', day: 'numeric' }
+      return(newDate.toLocaleDateString('en',options ))
     }
   }
 };
