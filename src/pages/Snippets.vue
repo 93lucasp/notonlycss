@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="text-3xl md:text-4xl font-semibold mb-3">Snippets</h1>
+    <h1 class="text-3xl md:text-4xl font-semibold mb-3">Snippets <i class="fas fa-code ml-2 text-2xl"></i></h1>
     <p
       class="text-lg md:text-xl mb-12 "
     >As <b>Frontend Developers</b> we love <b>Animations</b>, so we decided to create a list of awesome web animations, we decided to embed codepen to have the code of every single animation always available for <b>everyone</b>.</p>

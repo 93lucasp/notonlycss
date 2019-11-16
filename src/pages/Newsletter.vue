@@ -1,6 +1,6 @@
 <template>
   <Layout> 
-    <h1 class="text-3xl md:text-4xl font-bold mb-3">Newsletter</h1>
+    <h1 class="text-3xl md:text-4xl font-bold mb-3">Newsletter <i class="far fa-envelope ml-2 text-2xl"></i></h1>
     <h2 class="text-xl md:text-2xl mb-4">The best <b>Frontend articles</b> in your inbox weekly</h2>
     <p class="text-lg md:text-xl mb-12">We publish <b>every Tuesday</b>, if you would like to receive our articles <b>directly in your inbox, join our newsletter!</b> We strongly believe in the <a href="https://substack.com/" target="_blank" rel="noopener noreferrer" class="font-bold">Substack</a> project, so we decided to run our newsletter on their platform! </p>
 

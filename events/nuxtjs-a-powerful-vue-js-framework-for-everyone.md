@@ -4,7 +4,7 @@ abstract: >-
   Let's see why Nuxt JS is very powerful and easy to use for all needs (Static  
   Site Generation, Server side rendering and SPA)
 image: /uploads/progetto-senza-titolo-1-.jpg
-date: 01-02-2020
+dateMeeting: 01-02-2020
 ---
 # Details
 

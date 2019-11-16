@@ -15,8 +15,9 @@ collections:
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Abstract", name: "abstract", widget: "string"}
         - {label: "Image", name: "image", widget: "image"}
-        - {label: "Publish Date", name: "date", widget: "string"}
+        - {label: "Meeting Date", name: "dateMeeting", widget: "string"}
         - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
     - name: "snippets" # Used in routes, e.g., /admin/collections/blog
       label: "Snippet" # Used in the UI
       folder: "snippets" # The path to the folder where the documents are stored
@@ -27,6 +28,7 @@ collections:
         - {label: "Author", name: "author", widget: "string"}
         - {label: "Abstract", name: "abstract", widget: "string"}
         - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Publish Date", name: "date", widget: "datetime"}
     - name: "articles" # Used in routes, e.g., /admin/collections/blog
       label: "Article" # Used in the UI
       folder: "articles" # The path to the folder where the documents are stored

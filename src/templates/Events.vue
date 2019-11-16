@@ -17,7 +17,7 @@ query ($path: String!) {
     event: events (path: $path) {
       title
       content
-      date
+      dateMeeting
       image
     }
 }

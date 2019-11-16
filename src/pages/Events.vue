@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1 class="text-3xl md:text-4xl font-bold mb-3">Events</h1>
+    <h1 class="text-3xl md:text-4xl font-bold mb-3">Events <i class="far fa-calendar-alt ml-2 text-2xl"></i></h1>
     <p class="text-lg md:text-xl mb-12">
       We love meetup, we are an international community so why don't try to organize online meetup?
       <br />From here is born the idea.
@@ -25,13 +25,13 @@
             <div class="mb-4">
               <p>
                 Date:
-                <time>{{event.node.date}}</time>
+                <time>{{event.node.dateMeeting}}</time>
               </p>
             </div>
             <g-link
               :to="event.node.path"
               class="event__link py-2 px-10 rounded block text-center md:inline-block"
-            >Discover</g-link>
+            >Find out more and register</g-link>
           </div>
         </div>
       </li>
@@ -47,7 +47,7 @@ query {
         title
         abstract
         image
-        date
+        dateMeeting
       }
     }
   }
