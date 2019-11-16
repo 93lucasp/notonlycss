@@ -60,7 +60,7 @@ export default {
         content: "Not Only CSS | Snippets"
       },
       {
-        property: "og:description",
+        property: "twitter:description",
         content: "Snippets of web animations for frontend developers"
       },
       {

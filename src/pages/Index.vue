@@ -139,7 +139,7 @@ export default {
         content: "Not Only CSS"
       },
       {
-        property: "og:description",
+        property: "twitter:description",
         content: "Articles, snippets, events and newsletter for frontend developers"
       },
       {
@@ -147,7 +147,6 @@ export default {
         content: "https://www.notonlycss.com/uploads/share.png"
       },
       { property: "og:url", content: "https://www.notonlycss.com" },
-      { name: "robots", content: "index, follow" }
     ]
   },
   methods: {

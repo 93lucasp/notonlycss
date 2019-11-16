@@ -77,7 +77,7 @@ export default {
         content: "Not Only CSS | Events"
       },
       {
-        property: "og:description",
+        property: "twitter:description",
         content: "The events of Not Only CSS for frontend developers"
       },
       {

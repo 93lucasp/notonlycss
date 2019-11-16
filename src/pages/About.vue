@@ -39,7 +39,7 @@ export default {
         content: "Not Only CSS | About"
       },
       {
-        property: "og:description",
+        property: "twitter:description",
         content: "Articles, snippets, events and newsletter for frontend developers"
       },
       {
