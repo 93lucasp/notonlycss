@@ -27,4 +27,4 @@ The meetup will be **first February 2020** at **15:00** (CET)
 
 # How to register
 
-We decided to create a maximum number of 20 tickets, click [**here**](<We decided to create a maximum number of 20 tickets, click here to get your free ticket.>) to get your free ticket.
+We decided to create a maximum number of 20 tickets, click [**here**](https://www.eventbrite.com/e/82349558747) to get your free ticket.
