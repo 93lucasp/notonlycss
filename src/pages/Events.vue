@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="text-3xl md:text-4xl font-bold mb-3">Events <i class="far fa-calendar-alt ml-2 text-2xl"></i></h1>
-    <p class="text-lg md:text-xl mb-12">
+    <p class="text-lg md:text-xl mb-12 font-light">
       We love meetup, we are an international community so why don't try to organize online meetup?
       <br />From here is born the idea.
       <br />Our meetup will be on frontend technologies, join them and be part of our community.
