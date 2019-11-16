@@ -2,7 +2,14 @@
   <Layout>
     <h1 class="text-3xl md:text-4xl font-bold mb-3">About us <i class="far fa-address-card ml-2 text-2xl"></i></h1>
     <p class="text-lg md:text-xl mb-2 font-light">Our mission is to help <b>Frontend Developers</b> to improve their knowledges. <br> We provide <b>articles, snippets of animations, online events and weekly newsletter to keep you updated</b>. </p>
-    <p class="text-lg md:text-xl mb-12 font-light">Our articles are published on Medium, we write for free and only Medium through the <a href="https://medium.com/creators" target="_blank" rel="noopener noreferrer" class="underline">Medium Partner Program</a> allows us to earn money for the commitment.<br></p>
+    <p class="text-lg md:text-xl mb-12 font-light">Our articles are published on
+        <span class="font-bold">Medium</span>, we write for free and only Medium through the
+        <a
+          href="https://medium.com/creators"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Medium Partner Program</a> allows us to get a remuneration for the commitment. <br>
+        The links of Medium that we provide guarantee everyone <b>free access</b> to all our articles.<br></p>
     <h1 class="text-3xl md:text-4xl font-bold mb-3">Follow Not Only CSS  <i class="fas fa-share-alt ml-2 text-2xl"></i></h1>
     <ul class="flex items-center mb-12">
       <li>
