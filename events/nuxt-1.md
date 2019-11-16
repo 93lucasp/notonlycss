@@ -1,23 +1,30 @@
 ---
-title: Nuxt
-abstract: The first online meetup organized by Not Only CSS will be on Nuxt.js. If you are starting to use this Vue.js framework or you want to discover more about it, Join our event!
-image: /uploads/random.jpg
-date: Coming soon
+title: Nuxt JS a Powerful Vue.js framework for everyone
+abstract: >-
+  Let's see why Nuxt JS is very powerful and easy to use for all needs (Static
+  Site Generation, Server side rendering and SPA) )
+image: /uploads/progetto-senza-titolo.jpg
+date: 01-02-2020
 ---
-# Cos’è Lorem Ipsum?
+# Details
 
-Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.
+During our first  meetup we will talk about **NuxtJs** from the basic, Some of the topics of the meeting will be:
 
+* What is NuxtJS
+* What are the differences with Vue.js and why it's easier to start with it.
+* Rendering mode (SSR, SPA, Static)
+* Explain the structure of the files and for what to use them.
 
+# Where
 
-# Perchè lo utilizziamo?
+The meetup will be **online**, so everyone could partecipate, we didn't choose the platform yet we are doing research to understand what is good for our needs.
 
-È universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo leggibile. Molti software di impaginazione e di web design utilizzano Lorem Ipsum come testo modello. Molte versioni del testo sono state prodotte negli anni, a volte casualmente, a volte di proposito (ad esempio inserendo passaggi ironici).
+We will let you know by email when we decided.
 
+# When
 
+The meetup will be **first February 2020** at **15:00** (CET)
 
+# How to register
 
-
-# Da dove viene?
-
-Al contrario di quanto si pensi, Lorem Ipsum non è semplicemente una sequenza casuale di caratteri. Risale ad un classico della letteratura latina del 45 AC, cosa che lo rende vecchio di 2000 anni. Richard McClintock, professore di latino al Hampden-Sydney College in Virginia, ha ricercato una delle più oscure parole latine, consectetur, da un passaggio del Lorem Ipsum e ha scoperto tra i vari testi in cui è citata, la fonte da cui è tratto il testo, le sezioni 1.10.32 and 1.10.33 del "de Finibus Bonorum et Malorum" di Cicerone. Questo testo è un trattato su teorie di etica, molto popolare nel Rinascimento. La prima riga del Lorem Ipsum, "Lorem ipsum dolor sit amet..", è tratta da un passaggio della sezione 1.10.32.
+We decided to create a maximum number of 20 tickets, click [**here**](<We decided to create a maximum number of 20 tickets, click here to get your free ticket.>) to get your free ticket.
