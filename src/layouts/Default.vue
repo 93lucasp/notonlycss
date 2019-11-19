@@ -183,4 +183,15 @@ body {
     left: 0;
   }
 }
+.btn-cta {
+  
+    background-color: #3399ff;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid #fff;
+      background-color: #3399ff;
+    }
+  
+}
 </style>

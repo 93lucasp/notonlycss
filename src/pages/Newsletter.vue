@@ -2,9 +2,11 @@
   <Layout> 
     <h1 class="text-3xl md:text-4xl font-bold mb-3">Newsletter <i class="far fa-envelope ml-2 text-2xl"></i></h1>
     <h2 class="text-xl md:text-2xl mb-4">The best <b>Frontend articles</b> in your inbox weekly</h2>
-    <p class="text-lg md:text-xl mb-12 font-light">We publish articles <b>every Tuesday</b>, you can receive them <b>directly in your inbox just join our newsletter!</b> We believe in <a href="https://substack.com/" target="_blank" rel="noopener noreferrer" class="font-bold">Substack</a> project that's why we run our newsletter on their platform!</p>
+    <p class="text-lg md:text-xl font-light">The Not Only CSS newsletter will tell you something new every week.</p>
+    <p class="text-lg md:text-xl mb-12 font-light">We publish articles <b>every Tuesday</b>, you can receive them <b>directly in your inbox, just join our newsletter!</b> </p>
+    <a href="https://upscri.be/ekrivb" target="_blank" rel="noopener noreferrer" class="btn-cta py-2 px-10 rounded">Join now</a>
 
-    <iframe width="100%" height="220" src="https://notonlycss.substack.com/embed" frameborder="0" scrolling="no" class="mb-16"></iframe>
+    
   </Layout>
 </template>
 
