@@ -1,5 +1,5 @@
 ---
-title: How I Stopped to Write CSS
+title: How I Stopped Writing CSS
 abstract: I changed the way I use CSS thanks to Tailwind
 image: /uploads/1_pb5j82kr683emi4kokhnkq-1-.png
 link: >-
