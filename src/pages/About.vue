@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <h1 class="text-3xl md:text-4xl font-bold mb-3">About us <i class="far fa-address-card ml-2 text-2xl"></i></h1>
-    <p class="text-lg md:text-xl mb-2 font-light">Our mission is to help <b>Frontend Developers</b> to improve their knowledges. <br> We provide <b>articles, snippets of animations, online events and weekly newsletter to keep you updated</b>. </p>
+    <p class="text-lg md:text-xl mb-2 font-light">Our mission is to help <b>Frontend Developers</b> to improve their knowledges. <br> We provide <b>articles, snippets of animations, online events and monthly newsletter to keep you updated</b>. </p>
     <p class="text-lg md:text-xl mb-12 font-light">Our articles are published on
         <span class="font-bold">Medium</span>, we write for free and only Medium through the
         <a
