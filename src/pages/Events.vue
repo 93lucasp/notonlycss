@@ -5,7 +5,9 @@
      We are an international community and we like meetups where we discuss <b>frontend technologies</b>.
       <br /> <b>Join us</b> and become part of our community
     </p>
-    <ul>
+
+    <h2>No events are present in this moment</h2>
+    <!-- <ul>
       <li
         v-for="event in $page.events.edges"
         :key="event.id"
@@ -34,7 +36,7 @@
           </div>
         </div>
       </li>
-    </ul>
+    </ul> -->
   </Layout>
 </template>
 <page-query>
