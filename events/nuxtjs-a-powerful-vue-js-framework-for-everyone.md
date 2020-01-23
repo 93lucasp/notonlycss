@@ -1,5 +1,5 @@
 ---
-title: NuxtJS a Powerful Vue.js Framework for Everyone
+title: NuxtJS a Powerful Vue.js Framework for Everyone 1
 abstract: >-
   Let's see why NuxtJS is so powerful and easy to use for all needs (Static  
   Site Generation, Server side rendering and SPA)
