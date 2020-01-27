@@ -23,7 +23,7 @@
 </template>
 <page-query>
 query {
-  snippets: allSnippets {
+  snippets: allSnippets(order: DESC) {
     edges {
       node {
         title
