@@ -1,25 +1,16 @@
 <template>
   <Layout>
-    <form name="contact" method="POST" data-netlify="true">
-      <p>
+    <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+      <p class="hidden">
         <label>
-          Your Name:
-          <input type="text" name="name" />
+          Don’t fill this out if you're human:
+          <input name="bot-field" />
         </label>
       </p>
       <p>
         <label>
-          Your Email:
-          <input type="email" name="email" />
-        </label>
-      </p>
-      <p>
-        <label>
-          Your Role:
-          <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select>
+          Email:
+          <input type="text" name="email" />
         </label>
       </p>
       <p>
@@ -29,7 +20,7 @@
         </label>
       </p>
       <p>
-        <button type="submit">Send</button>
+        <button type="submit" class="btn">Send</button>
       </p>
     </form>
   </Layout>
@@ -41,7 +32,11 @@ export default {
 };
 </script>
 <style scoped>
-input{
-    color: #333!important;
+input,
+textarea {
+  color: #333 !important;
+}
+::placeholder {
+  color: #333 !important;
 }
 </style>
