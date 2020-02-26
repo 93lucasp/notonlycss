@@ -16,7 +16,8 @@ collections:
         - {label: "Abstract", name: "abstract", widget: "string"}
         - {label: "Image", name: "image", widget: "image"}
         - {label: "Meeting Date", name: "dateMeeting", widget: "string"}
-        - {label: "Body", name: "body", widget: "markdown"}
+        - {label: "Body", name: "body1", widget: "markdown"}
+        - {label: "Body", name: "body2", widget: "markdown"}
         - {label: "Publish Date", name: "date", widget: "datetime"}
     - name: "snippets" # Used in routes, e.g., /admin/collections/blog
       label: "Snippet" # Used in the UI

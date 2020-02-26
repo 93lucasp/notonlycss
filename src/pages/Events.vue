@@ -7,7 +7,7 @@
     </p>
 
     <h2>No events are present in this moment</h2>
-    <!-- <ul>
+    <ul>
       <li
         v-for="event in $page.events.edges"
         :key="event.id"
@@ -36,7 +36,7 @@
           </div>
         </div>
       </li>
-    </ul> -->
+    </ul>
   </Layout>
 </template>
 <page-query>

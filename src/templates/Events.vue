@@ -7,7 +7,8 @@
         :style="{ 'background-image': 'url(' + $page.event.image + ')' }"
       ></div>
       <!-- <i><time>{{$page.event.date}}</time></i> -->
-      <div v-html="$page.event.content"></div>
+      <div v-html="$page.event.body1"></div>
+      <div v-html="$page.event.body2"></div>
     </div>
   </Layout>
 </template>
@@ -16,7 +17,8 @@
 query ($path: String!) {
     event: events (path: $path) {
       title
-      content
+      body1
+      body2
       dateMeeting
       image
     }
