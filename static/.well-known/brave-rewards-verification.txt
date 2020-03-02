@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: notonlycss.com
+Token: fb6db97f5a5a20a8f4a0bebde8e97f2f94571f95078fa8685d918965e4878674
